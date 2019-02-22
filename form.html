@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8" />
+    <title>Form Sample</title>
+  </head>
+
+  <body>
+    <nav><a href="index.html">Повернутися на попередню сторінку</a></nav>
+    <h3>Пройдіть невеличке соціологічне опитування на тему кіно</h3>
+    <form method="POST" action="https://formspree.io/dyatlovleon@gmail.com">
+      <ul>
+        <li>
+          <label>
+            Ваше ім'я: <input type="text" placeholder="Name" name="User Name"
+          /></label>
+        </li>
+        <li>
+          <label
+            >Ваш вік:
+            <select name="Age">
+              <option value="Не вибрано" selected>вибрати</option>
+              <option value="10-17">10-17</option>
+              <option value="18-25">18-25</option>
+              <option value="26-30">26-30</option>
+              <option value="31-40">31-40</option>
+              <option value="41-50">41-50</option
+              ><option value="51+">51+</option>
+            </select></label
+          >
+        </li>
+        <li>
+          <label for="email-input">Ваш Email: </label>
+          <input
+            type="email"
+            placeholder="Email"
+            name="Email"
+            id="email-input"
+            required
+          />
+        </li>
+        <li>
+          <label>
+            Ваш телефон:
+            <input
+              type="tel"
+              placeholder="(0XX)XXXXXXX"
+              name="Tel."
+              pattern="[^A-Za-zА-Яа-я][0-9]{,10}"
+          /></label>
+        </li>
+        <li>
+          <label>Стать: </label>
+          <label>
+            <input type="radio" name="Gender" value="male" />Чоловік</label
+          >
+          <label>
+            <input type="radio" name="Gender" value="female" />Жінка</label
+          >
+          <label> <input type="radio" name="Gender" value="other" />Інше</label>
+        </li>
+        <li>
+          <label>
+            Сайт, на якому Ви найчастіше дивитесь фільми:
+            <input type="url" placeholder="https://" name="Website"
+          /></label>
+        </li>
+      </ul>
+      <ol>
+        <li>
+          Яким жанрам кіно Ви надаєте перевагу?<br />
+          <label
+            ><input type="checkbox" name="Genre" value="<Бойовик>" />
+            Бойовик</label
+          >
+          <label
+            ><input type="checkbox" name="Genre" value="Комедія" />
+            Комедія</label
+          >
+          <label
+            ><input type="checkbox" name="Genre" value="Драма" /> Драма</label
+          >
+          <label
+            ><input type="checkbox" name="Genre" value="Детектив" />
+            Детектив</label
+          >
+          <label
+            ><input type="checkbox" name="Genre" value="Жахи" /> Жахи</label
+          >
+        </li>
+        <li>
+          <label>
+            Ваш улюблений режисер:
+            <input type="text" placeholder="Director" name="Director"
+          /></label>
+        </li>
+        <li>
+          <label>
+            Ваш улюблений фільм:
+            <input type="text" placeholder="Movie" name="Movie"
+          /></label>
+        </li>
+        <li>
+          <label>
+            Ваш улюблений актор:
+            <input type="text" placeholder="Actor" name="Actor"
+          /></label>
+        </li>
+        <li>
+          <label>
+            Ваш улюблена акторки:
+            <input type="text" placeholder="Actress" name="Actress"
+          /></label>
+        </li>
+        <li>
+          <label>Надаю перевагу перегляду кіно </label>
+          <label> <input type="radio" name="Movie" value="home" />вдома</label>
+          <label>
+            <input type="radio" name="Movie" value="cinema" />в
+            кінотеатрах</label
+          >
+        </li>
+        <li>
+          <label
+            >Чи готові Ви платити за кожен переглянутий фільм (не
+            використовувати піратські сайти)?
+          </label>
+          <label> <input type="radio" name="Pay" value="yes" />Так</label>
+          <label> <input type="radio" name="Pay" value="no" />Ні</label>
+        </li>
+      </ol>
+
+      <textarea name="Comment" placeholder="Коментар"></textarea><br />
+      <input
+        type="checkbox"
+        name="agree"
+        onclick="agreeForm(this.form)"
+        required
+      />
+      Даю згоду на обробку наданої мною інформації <br />
+      <input type="image" src="img/send.png" alt="SEND" />
+    </form>
+    <footer>Copyright Leonid Dyatlov 2019</footer>
+  </body>
+</html>

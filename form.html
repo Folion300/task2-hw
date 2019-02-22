@@ -11,13 +11,10 @@
     <form method="POST" action="https://formspree.io/dyatlovleon@gmail.com">
       <ul>
         <li>
-          <label>
-            Ваше ім'я: <input type="text" placeholder="Name" name="User Name"/>
-          </label>
+          <label>Ваше ім'я: <input type="text" placeholder="Name" name="User Name"/></label>
         </li>
         <li>
-          <label>
-            Ваш вік:
+          <label>Ваш вік:
             <select name="Age">
               <option value="Не вибрано" selected>вибрати</option>
               <option value="10-17">10-17</option>
@@ -31,100 +28,61 @@
         </li>
         <li>
           <label for="email-input">Ваш Email: </label>
-          <input
-            type="email"
-            placeholder="Email"
-            name="Email"
-            id="email-input"
-            required
-          />
+          <input type="email" placeholder="Email" name="Email" id="email-input" required/>
         </li>
         <li>
-          <label>
-            Ваш телефон:
-            <input
-              type="tel"
-              placeholder="(0XX)XXXXXXX"
-              name="Tel."
-              pattern="[^A-Za-zА-Яа-я][0-9]{,10}"
-          /></label>
+          <label> Ваш телефон:
+            <input type="tel" placeholder="(0XX)XXXXXXX" name="Tel." pattern="[^A-Za-zА-Яа-я][0-9]{,10}" />
+          </label>
         </li>
         <li>
           <label>Стать: </label>
-          <label>
-            <input type="radio" name="Gender" value="male" />Чоловік</label
-          >
-          <label>
-            <input type="radio" name="Gender" value="female" />Жінка</label
-          >
-          <label> <input type="radio" name="Gender" value="other" />Інше</label>
+          <label><input type="radio" name="Gender" value="male" />Чоловік</label>
+          <label><input type="radio" name="Gender" value="female" />Жінка</label>
+          <label><input type="radio" name="Gender" value="other" />Інше</label>
         </li>
         <li>
-          <label>
-            Сайт, на якому Ви найчастіше дивитесь фільми:
-            <input type="url" placeholder="https://" name="Website"
-          /></label>
+          <label>Сайт, на якому Ви найчастіше дивитесь фільми:
+            <input type="url" placeholder="https://" name="Website"/>
+          </label>
         </li>
       </ul>
       <ol>
         <li>
           Яким жанрам кіно Ви надаєте перевагу?<br />
-          <label
-            ><input type="checkbox" name="Genre" value="<Бойовик>" />
-            Бойовик</label
-          >
-          <label
-            ><input type="checkbox" name="Genre" value="Комедія" />
-            Комедія</label
-          >
-          <label
-            ><input type="checkbox" name="Genre" value="Драма" /> Драма</label
-          >
-          <label
-            ><input type="checkbox" name="Genre" value="Детектив" />
-            Детектив</label
-          >
-          <label
-            ><input type="checkbox" name="Genre" value="Жахи" /> Жахи</label
-          >
+          <label><input type="checkbox" name="Genre" value="<Бойовик>" />Бойовик</label>
+          <label><input type="checkbox" name="Genre" value="Комедія" /> Комедія</labe>
+          <label><input type="checkbox" name="Genre" value="Драма" /> Драма</label>
+          <label><input type="checkbox" name="Genre" value="Детектив" />Детектив</label>
+          <label><input type="checkbox" name="Genre" value="Жахи" /> Жахи</label>
         </li>
         <li>
           <label>
             Ваш улюблений режисер:
-            <input type="text" placeholder="Director" name="Director"
-          /></label>
+            <input type="text" placeholder="Director" name="Director"/></label>
         </li>
         <li>
           <label>
             Ваш улюблений фільм:
-            <input type="text" placeholder="Movie" name="Movie"
-          /></label>
+            <input type="text" placeholder="Movie" name="Movie"/></label>
         </li>
         <li>
           <label>
             Ваш улюблений актор:
-            <input type="text" placeholder="Actor" name="Actor"
-          /></label>
+            <input type="text" placeholder="Actor" name="Actor"/></label>
         </li>
         <li>
           <label>
             Ваш улюблена акторки:
-            <input type="text" placeholder="Actress" name="Actress"
-          /></label>
+            <input type="text" placeholder="Actress" name="Actress"/></label>
         </li>
         <li>
           <label>Надаю перевагу перегляду кіно </label>
           <label> <input type="radio" name="Look" value="home" />вдома</label>
-          <label>
-            <input type="radio" name="Movie" value="cinema" />в
-            кінотеатрах</label
-          >
+          <label><input type="radio" name="Movie" value="cinema" />в кінотеатрах</label>
         </li>
         <li>
-          <label
-            >Чи готові Ви платити за кожен переглянутий фільм (не
-            використовувати піратські сайти)?
-          </label>
+          <label>Чи готові Ви платити за кожен переглянутий фільм (не використовувати піратські сайти)?</label>
           <label> <input type="radio" name="Pay" value="yes" />Так</label>
           <label> <input type="radio" name="Pay" value="no" />Ні</label>
         </li>
@@ -132,12 +90,7 @@
           <textarea name="Comment" placeholder="Коментар"></textarea><br />
         </li>
       </ol>
-      <input
-        type="checkbox"
-        name="Agree to use"
-        onclick="agreeForm(this.form)"
-        required
-      />
+      <input type="checkbox" name="Agree to use" onclick="agreeForm(this.form)" required />
       Даю згоду на обробку наданої мною інформації <br />
       <input type="image" src="img/send.png" alt="SEND" />
     </form>
